@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+.app-heading {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0px 3% 0px;
+
+
+}
+.todo-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-input {
+    width: 500px;
+    height: 50px;
+    font-size: 18px;
+    border: 0px;
+    background-color: teal;
+    color: whitesmoke;
+}
+.form-submit {
+    border: none;
+    width: 70px;
+    height: 50px;
+    background-color: yellowgreen;
+    color: white;
+    font-size: 18px;
+}
+.form-submit:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+.todo-list {
+    background-color: snow;
+    padding: 1% 2%;
+    max-width: 700px;
+    width: 700px;
+    margin-top: 1%;
+    box-shadow: 0px 2px 15px lightgray;
+
+}
+.added-todo {
+    background-color: snow;
+    font-size: 24px;
+}
+.todo-list:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+}
+.todo-scroller {
+    max-height: 400px;
+    overflow-y: auto;
+}

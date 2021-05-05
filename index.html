@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Todo app</title>
+</head>
+<body>
+    <h1 class="app-heading">Simple Todo App with firebase</h1>
+    <div class="todo-body">
+        <form class="todo-form">
+            <input type="text" name="what" class="form-input">
+            <button class="form-submit">Add</button>
+        </form>
+        <div class="todo-scroller">
+        </div>
+    </div>
+
+
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyCgTlmdq42V8UdMvOCWaOOzvss2XdHxmCY",
+        authDomain: "firstproject-176a2.firebaseapp.com",
+        projectId: "firstproject-176a2",
+        storageBucket: "firstproject-176a2.appspot.com",
+        messagingSenderId: "174883244553",
+        appId: "1:174883244553:web:215599ac58d73df677c6d8",
+        measurementId: "G-5CY4ZQQT85"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapshorts: true});
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
