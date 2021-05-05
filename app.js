@@ -18,11 +18,6 @@ function showTodos(doc) {
 }
 
 // reading of data
-// db.collection('todos').get().then(data => {
-//     data.docs.forEach(doc => {
-//         showTodos(doc);
-//     })
-// })
 
 db.collection("todos").onSnapshot(snapshot => {
     let changes = snapshot.docChanges();
